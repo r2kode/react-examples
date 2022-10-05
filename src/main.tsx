@@ -5,6 +5,7 @@ import ErrorPage from "./error-page";
 import Root from "./routes/root";
 import ErrorBoundaries from "./routes/error-boundaries";
 import "./index.css";
+import Recurrence from "./routes/recurrence";
 
 const router = createBrowserRouter([
   {
@@ -15,6 +16,11 @@ const router = createBrowserRouter([
       {
         path: "error-boundaries",
         element: <ErrorBoundaries />,
+        errorElement: <ErrorPage />,
+      },
+      {
+        path: "recurrence",
+        element: <Recurrence />,
         errorElement: <ErrorPage />,
       },
     ],
