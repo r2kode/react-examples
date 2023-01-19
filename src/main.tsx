@@ -7,6 +7,7 @@ import ErrorBoundaries from "./routes/error-boundaries";
 import "./index.css";
 import Recurrence from "./routes/recurrence";
 import Main from "./components/Main";
+import DallE from "./components/dall-e";
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,11 @@ const router = createBrowserRouter([
       {
         path: "recurrence",
         element: <Recurrence />,
+        errorElement: <ErrorPage />,
+      },
+      {
+        path: "dall-e",
+        element: <DallE />,
         errorElement: <ErrorPage />,
       },
     ],

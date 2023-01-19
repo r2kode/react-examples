@@ -14,6 +14,10 @@ export default function Root() {
       path: "recurrence",
       label: "Recurrence",
     },
+    {
+      path: "dall-e",
+      label: "Dall-E",
+    },
   ];
 
   return (
