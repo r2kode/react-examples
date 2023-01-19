@@ -7,7 +7,7 @@ import ErrorBoundaries from "./routes/error-boundaries";
 import "./index.css";
 import Recurrence from "./routes/recurrence";
 import Main from "./components/Main";
-import DallE from "./components/dall-e";
+import DallE from "./components/DallE";
 
 const router = createBrowserRouter([
   {
