@@ -10,9 +10,10 @@
     "test": "vitest"
   },
   "dependencies": {
+    "@r2kode/qnf-js-lib": "^1.1.0",
     "localforage": "1.10.0",
     "match-sorter": "6.3.1",
-    "@r2kode/qnf-js-lib": "^1.0.0",
+    "openai": "^3.1.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-error-boundary": "3.1.4",
