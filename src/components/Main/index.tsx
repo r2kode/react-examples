@@ -1,4 +1,5 @@
 import { relativeTime } from "@r2kode/qnf-js-lib";
+import Button from "../Button";
 
 function Main() {
   const relTimeTest = relativeTime(
@@ -9,7 +10,14 @@ function Main() {
       lang: "pl",
     }
   );
-  return <div>{relTimeTest}</div>;
+  return (
+    <div>
+      <section>{relTimeTest}</section>
+      <section>
+        <Button label={"Click"} style={"btn-type-primary btn-color-primary"} />
+      </section>
+    </div>
+  );
 }
 
 export default Main;
