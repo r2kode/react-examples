@@ -15,6 +15,7 @@ export default function Root() {
       label: "Recurrence",
     },
   ];
+
   return (
     <>
       <div id="sidebar">
