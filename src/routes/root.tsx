@@ -18,6 +18,10 @@ export default function Root() {
       path: "dall-e",
       label: "Dall-E",
     },
+    {
+      path: "data-structures",
+      label: "Data Structures",
+    },
   ];
 
   return (

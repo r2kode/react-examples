@@ -10,6 +10,7 @@
     "test": "vitest"
   },
   "dependencies": {
+    "@faker-js/faker": "^7.6.0",
     "@r2kode/qnf-js-lib": "^1.1.0",
     "localforage": "1.10.0",
     "match-sorter": "6.3.1",

@@ -10,8 +10,10 @@ function Main() {
       lang: "pl",
     }
   );
+
   return (
     <div>
+      <h1>Main</h1>
       <section>{relTimeTest}</section>
       <section>
         <Button label={"Click"} style={"btn-type-primary btn-color-primary"} />

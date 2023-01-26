@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@faker-js/faker': ^7.6.0
   '@r2kode/qnf-js-lib': ^1.1.0
   '@testing-library/jest-dom': 5.16.5
   '@testing-library/react': 13.4.0
@@ -23,6 +24,7 @@ specifiers:
   vitest: ^0.26.2
 
 dependencies:
+  '@faker-js/faker': 7.6.0
   '@r2kode/qnf-js-lib': 1.1.0
   localforage: 1.10.0
   match-sorter: 6.3.1
@@ -343,6 +345,11 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
+
+  /@faker-js/faker/7.6.0:
+    resolution: {integrity: sha512-XK6BTq1NDMo9Xqw/YkYyGjSsg44fbNwYRx7QK2CuoQgyy+f1rrTDHoExVM5PsyXCtfl2vs2vVJ0MN0yN6LppRw==}
+    engines: {node: '>=14.0.0', npm: '>=6.0.0'}
+    dev: false
 
   /@jest/expect-utils/29.3.1:
     resolution: {integrity: sha512-wlrznINZI5sMjwvUoLVk617ll/UYfGIZNxmbU+Pa7wmkL4vYzhV9R2pwVqUh4NWWuLQWkI8+8mOkxs//prKQ3g==}

@@ -8,6 +8,7 @@ import "./index.css";
 import Recurrence from "./routes/recurrence";
 import Main from "./components/Main";
 import DallE from "./components/DallE";
+import { DataStructures } from "./components/DataStructures";
 
 const router = createBrowserRouter([
   {
@@ -29,6 +30,11 @@ const router = createBrowserRouter([
       {
         path: "dall-e",
         element: <DallE />,
+        errorElement: <ErrorPage />,
+      },
+      {
+        path: "data-structures",
+        element: <DataStructures />,
         errorElement: <ErrorPage />,
       },
     ],
