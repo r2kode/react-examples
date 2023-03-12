@@ -1,6 +1,7 @@
 import { relativeTime } from "@r2kode/qnf-js-lib";
 import Button from "../Button";
 import Login from "../../features/Login";
+import { DynamicForm } from "../DynamicForm";
 
 function Main() {
   const relTimeTest = relativeTime(
@@ -20,8 +21,11 @@ function Main() {
         <Button label={"Click"} style={"btn-type-primary btn-color-primary"} />
       </section>
       <section>
-        <h1>LOgin form test</h1>
+        <h1>Login form test</h1>
         <Login />
+      </section>
+      <section>
+        <DynamicForm />
       </section>
     </div>
   );

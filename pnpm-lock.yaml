@@ -8,6 +8,7 @@ specifiers:
   '@storybook/addon-essentials': ^6.5.16
   '@storybook/addon-interactions': ^6.5.16
   '@storybook/addon-links': ^6.5.16
+  '@storybook/addon-styling': ^0.3.1
   '@storybook/builder-vite': ^0.4.2
   '@storybook/react': ^6.5.16
   '@storybook/testing-library': ^0.0.13
@@ -19,17 +20,18 @@ specifiers:
   '@types/react': 18.0.17
   '@types/react-dom': 18.0.6
   '@vitejs/plugin-react': 2.1.0
-  autoprefixer: ^10.4.13
+  autoprefixer: ^10.4.14
   babel-loader: ^8.3.0
   jsdom: 20.0.3
   localforage: 1.10.0
   match-sorter: 6.3.1
   openai: ~3.1.0
   postcss: ^8.4.21
+  postcss-loader: ^7.0.2
   react: 18.2.0
   react-dom: 18.2.0
   react-error-boundary: 3.1.4
-  react-hook-form: ~7.43.1
+  react-hook-form: ~7.43.5
   react-router-dom: 6.4.1
   sort-by: 1.2.0
   tailwindcss: ^3.2.6
@@ -56,6 +58,7 @@ devDependencies:
   '@storybook/addon-essentials': 6.5.16_kv2wqippxinsxghwtjel5xswuq
   '@storybook/addon-interactions': 6.5.16_ejygo5rfekpf2v5tcgsas46vmi
   '@storybook/addon-links': 6.5.16_biqbaboplfbrettd7655fr4n2y
+  '@storybook/addon-styling': 0.3.1_biqbaboplfbrettd7655fr4n2y
   '@storybook/builder-vite': 0.4.2_poefqoeykizocw3wuwdcavt55y
   '@storybook/react': 6.5.16_kv2wqippxinsxghwtjel5xswuq
   '@storybook/testing-library': 0.0.13_biqbaboplfbrettd7655fr4n2y
@@ -71,6 +74,7 @@ devDependencies:
   babel-loader: 8.3.0_@babel+core@7.21.0
   jsdom: 20.0.3
   postcss: 8.4.21
+  postcss-loader: 7.0.2_postcss@8.4.21
   tailwindcss: 3.2.7_postcss@8.4.21
   typescript: 4.6.4
   vite: 3.1.0
@@ -2344,6 +2348,33 @@ packages:
       react-dom: 18.2.0_react@18.2.0
       regenerator-runtime: 0.13.11
       ts-dedent: 2.2.0
+    dev: true
+
+  /@storybook/addon-styling/0.3.1_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-vKE9qG0cHKqCenhoStPXatEY67rldxhsWgChZZCm1xPSBsdwa5MuXc7IAbsx2H7GPOJEy367gIY6HGqw0oLfAA==}
+    peerDependencies:
+      '@storybook/addons': ^6.5.8
+      '@storybook/api': ^6.5.8
+      '@storybook/components': ^6.5.8
+      '@storybook/core-events': ^6.5.8
+      '@storybook/manager-api': ^7.0.0-beta.56
+      '@storybook/theming': ^6.5.8
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+      react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
+      resolve-url-loader: ^5.0.0
+      sass-loader: ^10.4.1
+    peerDependenciesMeta:
+      react:
+        optional: true
+      react-dom:
+        optional: true
+      resolve-url-loader:
+        optional: true
+      sass-loader:
+        optional: true
+    dependencies:
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
     dev: true
 
   /@storybook/addon-toolbars/6.5.16_biqbaboplfbrettd7655fr4n2y:
@@ -9707,6 +9738,19 @@ packages:
       schema-utils: 3.1.1
       semver: 7.3.8
       webpack: 4.46.0
+    dev: true
+
+  /postcss-loader/7.0.2_postcss@8.4.21:
+    resolution: {integrity: sha512-fUJzV/QH7NXUAqV8dWJ9Lg4aTkDCezpTS5HgJ2DvqznexTbSTxgi/dTECvTZ15BwKTtk8G/bqI/QTu2HPd3ZCg==}
+    engines: {node: '>= 14.15.0'}
+    peerDependencies:
+      postcss: ^7.0.0 || ^8.0.1
+      webpack: ^5.0.0
+    dependencies:
+      cosmiconfig: 7.1.0
+      klona: 2.0.6
+      postcss: 8.4.21
+      semver: 7.3.8
     dev: true
 
   /postcss-modules-extract-imports/2.0.0:
