@@ -1,6 +1,6 @@
 import { ErrorBoundary, FallbackProps } from "react-error-boundary";
-import User from "../components/User";
-import Product from "../components/Product";
+import User from "../../components/User";
+import Product from "../../components/Product";
 
 /**
  * https://www.npmjs.com/package/react-error-boundary

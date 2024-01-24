@@ -1,9 +1,9 @@
 import { relativeTime } from "@r2kode/qnf-js-lib";
-import Button from "../Button";
-import Login from "../../features/Login";
-import { DynamicForm } from "../DynamicForm";
+import Button from "../../components/Button";
+import Login from "../Login";
+import { DynamicForm } from "../../components/DynamicForm";
 
-function Main() {
+function Home() {
   const relTimeTest = relativeTime(
     "2022-12-01 10:00",
     "2022-12-01 22:00",
@@ -31,4 +31,4 @@ function Main() {
   );
 }
 
-export default Main;
+export default Home;
