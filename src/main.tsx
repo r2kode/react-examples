@@ -1,14 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider, Route } from "react-router-dom";
-import ErrorPage from "./error-page";
+import ErrorPage from "./routes/error-page";
 import Root from "./routes/root";
-import ErrorBoundaries from "./routes/error-boundaries";
+import ErrorBoundaries from "./features/ErrorBoundries";
 import "./index.css";
-import Recurrence from "./routes/recurrence";
-import Main from "./components/Main";
-import DallE from "./components/DallE";
-import { DataStructures } from "./components/DataStructures";
+import Recurrence from "./features/Recurrence";
+import Home from "./features/Home";
+import DallE from "./features/DallE";
+import { DataStructures } from "./features/DataStructures";
 import { Editor } from "./features/Editor";
 
 const router = createBrowserRouter([
@@ -17,7 +17,7 @@ const router = createBrowserRouter([
     element: <Root />,
     errorElement: <ErrorPage />,
     children: [
-      { element: <Main />, index: true },
+      { element: <Home />, index: true },
       {
         path: "error-boundaries",
         element: <ErrorBoundaries />,
