@@ -9,6 +9,7 @@ import Recurrence from "./routes/recurrence";
 import Main from "./components/Main";
 import DallE from "./components/DallE";
 import { DataStructures } from "./components/DataStructures";
+import { Editor } from "./features/Editor";
 
 const router = createBrowserRouter([
   {
@@ -35,6 +36,11 @@ const router = createBrowserRouter([
       {
         path: "data-structures",
         element: <DataStructures />,
+        errorElement: <ErrorPage />,
+      },
+      {
+        path: "editor",
+        element: <Editor />,
         errorElement: <ErrorPage />,
       },
     ],

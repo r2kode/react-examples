@@ -3,7 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@babel/core': ^7.21.0
   '@faker-js/faker': ~7.6.0
-  '@r2kode/qnf-js-lib': ~1.1.0
+  '@r2kode/qnf-js-lib': ~1.8.0
   '@storybook/addon-actions': ^6.5.16
   '@storybook/addon-essentials': ^6.5.16
   '@storybook/addon-interactions': ^6.5.16
@@ -41,7 +41,7 @@ specifiers:
 
 dependencies:
   '@faker-js/faker': 7.6.0
-  '@r2kode/qnf-js-lib': 1.1.0
+  '@r2kode/qnf-js-lib': 1.8.0
   localforage: 1.10.0
   match-sorter: 6.3.1
   openai: 3.1.0
@@ -1988,8 +1988,8 @@ packages:
       webpack: 5.76.1
     dev: true
 
-  /@r2kode/qnf-js-lib/1.1.0:
-    resolution: {integrity: sha512-nJ9ymMoeZyyWQxhW+PBZ1ie9I5oD5aAcsyod7DefwLLyhdAlgZvgwbM2cyKKJh3o7/UBBhFqUtzn8SbxOqYawQ==}
+  /@r2kode/qnf-js-lib/1.8.0:
+    resolution: {integrity: sha512-+ckpRdK6IuysBHdBqfMA9B9Aq3OlbThfk34Mvj/RR5uSvSspdPo6o8D4kIXeMdXYBNTs6flrsYttGPdCPvN2pg==}
     dev: false
 
   /@remix-run/router/1.0.1:
@@ -6967,7 +6967,7 @@ packages:
     resolution: {integrity: sha512-oWb1Z6mkHIskLzEJ/XWX0srkpkTQ7vaopMQkyaEIoq0fmtFVxOthb8cCxeT+p3ynTdkk/RZwbgG4brR5BeWECw==}
     engines: {node: '>= 4.0'}
     os: [darwin]
-    deprecated: fsevents 1 will break on node v14+ and could be using insecure binaries. Upgrade to fsevents 2.
+    deprecated: The v1 package contains DANGEROUS / INSECURE binaries. Upgrade to safe fsevents v2
     requiresBuild: true
     dependencies:
       bindings: 1.5.0

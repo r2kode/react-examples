@@ -22,6 +22,10 @@ export default function Root() {
       path: "data-structures",
       label: "Data Structures",
     },
+    {
+      path: "editor",
+      label: "Editor",
+    },
   ];
 
   return (
